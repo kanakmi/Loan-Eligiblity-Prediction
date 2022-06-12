@@ -2,6 +2,16 @@ import streamlit as st
 import pickle
 
 st.sidebar.title("Loan Eligibility Prediction")
+text = '''
+Loan Eligibility Prediction uses Random Forest Classifier to predict whether a person is eligible for a loan or not.
+
+It uses the principle of Responsible AI and keeps the predictions transparent to the user. Responsible AI is the practice of designing, developing, and deploying AI with good intention to empower employees and businesses, and fairly impact customers and society—allowing companies to engender trust and scale AI with confidence.
+
+If the user is not eligible for a loan, the AI will tell you why.
+
+Many banks have not been able to provide transparency into the process of their loan eligibility prediction systems, which can lead to some awkward conversations between clients and bank employees. Our app will help banks give a more appropriate answer to why an application was rejected, so that people are able to learn from mistakes and submit better applications next time.
+'''
+st.sidebar.write(text)
 x = False
 
 profession = [
